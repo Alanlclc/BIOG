@@ -11,7 +11,6 @@
         * {
             margin: 0px auto;
             padding: 0px;
-            font-family: "Microsoft YaHei",微软雅黑,"Hiragino Sans GB",Tahoma,Arial,"\5b8b\4f53",SimSun,sans-serif;
         }
         li{
             list-style-type: none;
@@ -84,32 +83,67 @@
         section {
             width: 100%;
             height: 1000px;
-            background-color:#ffffff;
+            background-color: #ffffff;
         }
         #d2{
             height: 1000px;
             width: 25%;
             float: left;
-            background-color: #f1f1f1;
+            background-color: #f9f9f9;
             font-family: "Microsoft YaHei",微软雅黑,"Hiragino Sans GB",Tahoma,Arial,"\5b8b\4f53",SimSun,sans-serif;
         }
         #d2 .d2c2{
             width: 25%;
             height: 650px;
-            background-color: blueviolet;
+            /* background-color: blueviolet; */
             position:fixed;
             top: 40px;
         }
         #d2 .d2c2 .d2c2c2{
             width: 100%;
             height: 300px;
-            background-color: bisque;
+            /* background-color: bisque; */
+        }
+        #d2 .d2c2 .d2c2c2 a{
+            height: 230px;
+            width: 230px;
+            display:block;
+            float: left;
+            /* background-color: chartreuse; */
+            margin-top: 40px;
+            margin-left: 52px;
         }
         #d2 .d2c2 .d2c2c2 img{
-            height: 200px;
-            width: 200px;
+            height: 230px;
+            width: 230px;
+            border-radius: 50%;
         }
-
+        #d2 .d2c2 .d2c2c3{
+            width: 100%;
+            height: 350px;
+            /* background-color: bisque; */
+        }
+        #d2 .d2c2 .d2c2c3 .d2c2c3c2{
+            height: 180px;
+            width: 100%;
+            /* background-color: red; */
+        }
+        #d2 .d2c2 .d2c2c3 .d2c2c3c2 ul{
+            width: 100%;
+            height: 180px;
+        }
+        #d2 .d2c2 .d2c2c3 .d2c2c3c2 ul li{
+            height: 60px;
+            line-height: 60px;
+            width: 100%;
+            display: block;
+            float: left;
+            text-align: center;
+        }
+        #d2 .d2c2 .d2c2c3 .d2c2c3c2 ul li span{
+            height: 60px;
+            border-bottom: 1px solid black; 
+        }
     </style>
     <header>
         <p>
@@ -128,15 +162,36 @@
         <div id="d2">
             <div class="d2c2">
                 <div class="d2c2c2">
-                    <a href="#" ><img src="image\img_0012.jpg" alt="Amila"></a>
+                    <a href="#" ><img src="image\img_0012.jpg" title="Amelia"></a>
                 </div>
                 <div class="d2c2c3">
+                    <div class="d2c2c3c2">
+                        <ul>
+                            <li>Name:
+                                <span>LuChen</span>
+                            </li>
+                            <li>Age:
+                                <span>24</span>
+                            </li>
+                            <li>Area:
+                                <span>NanJing</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d2c2c3c3">
+                        <ul>
+                            <li><a href=""><img src="" alt=""></a></li>
+                            <li><a href=""><img src="" alt=""></a></li>
+                            <li><a href=""><img src="" alt=""></a></li>
+                        </ul>
+                    </div>
+
 
                 </div>
             </div>
         </div>
         <div id="d3">
-
+            
         </div>
     </section>
     <footer></footer>
