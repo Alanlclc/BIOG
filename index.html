@@ -9,23 +9,135 @@
 <body>
     <style>
         * {
-            padding: 0px;
             margin: 0px auto;
+            padding: 0px;
+            font-family: "Microsoft YaHei",微软雅黑,"Hiragino Sans GB",Tahoma,Arial,"\5b8b\4f53",SimSun,sans-serif;
         }
-    
+            list-style-type: none;
+        }
+        a{
+            text-decoration-line: none;
+        }
+        /*  --------------------- */
+        /*  --------------------- */
+        /*  --------------------- */
+        /* 头部代码 */
         header {
             width: 100%;
             height: 40px;
-            background-color: pink;
+            background-color:  #323942;
+            position:fixed;
+            top: 0px;
+            left: 0px;
         }
+        header p:nth-of-type(1){
+            display:block;
+            float: left;
+            height: 40px;
+            line-height: 40px;
+            width: 25%;
+            /* background-color: aqua; */
+            text-align: center;
+            font-size: 30px;
+        }
+        header p:nth-of-type(1) a{
+            color: #ffffff;
+        }
+        .hc1 {
+            display:block;
+            float: left;
+            height: 40px;
+            width: 75%;
+            /* background-color: blue; */
+        }
+        .hc1 ul {
+            height: 40px;
+            width: 60%;
+            /* background-color: blue; */
+            float: left;
+        }
+        .hc1 ul li{
+            display: block;
+            float: left;
+            height: 40px;
+            width: 25%;
+            line-height: 40px;
+            text-align: center;
+        }
+        .hc1 ul li a{
+            color: #ffffff;
+        }
+        .hc1 ul li a:hover{
+            color: #fbc700;
+        }
+        .hc1 audio{
+            display: block;
+            float: left;
+            width: 40%;
+        }
+
+        /*  --------------------- */
+        /*  --------------------- */
+        /*  --------------------- */
+        /* 中部代码 */
         section {
-            width: 1080px;
-            height: 500px;
-            background-color: plum;
+            width: 100%;
+            height: 1000px;
+            background-color:#ffffff;
         }
+        #d2{
+            height: 1000px;
+            width: 25%;
+            float: left;
+            background-color: #f1f1f1;
+            font-family: "Microsoft YaHei",微软雅黑,"Hiragino Sans GB",Tahoma,Arial,"\5b8b\4f53",SimSun,sans-serif;
+        }
+        #d2 .d2c2{
+            width: 25%;
+            height: 650px;
+            background-color: blueviolet;
+            position:fixed;
+            top: 40px;
+        }
+        #d2 .d2c2 .d2c2c2{
+            width: 100%;
+            height: 300px;
+            background-color: bisque;
+        }
+        #d2 .d2c2 .d2c2c2 img{
+            height: 200px;
+            width: 200px;
+        }
+
     </style>
-    <header></header>
-    <section></section>
+    <header>
+        <p>
+            <a href="">Alan'Home</a>
+        </p>
+        <div class="hc1">
+            <ul>
+                <li><a href="">首页</a> </li>
+                <li><a href="">技术分享</a> </li>
+                <li><a href="">论坛留言</a> </li>
+                <li><a href="">我的成长</a> </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div id="d2">
+            <div class="d2c2">
+                <div class="d2c2c2">
+                    <a href="#" ><img src="F:\MYblog\BIOG\image\img_0012.jpg" alt="Amila"></a>
+                </div>
+                <div class="d2c2c3">
+
+                </div>
+            </div>
+        </div>
+        <div id="d3">
+
+        </div>
+    </section>
     <footer></footer>
 </body>
 </html>
