@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link type="text/CSS" rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/index.js"></script>
     <title>index</title>
 </head>
 <body>
@@ -65,7 +67,44 @@
         </div>
         <!-- 右边正文部分容器 -->
         <div id="d3">
-            
+            <!-- 轮播图容器 -->
+            <div class="d3c2">
+                <div class="all">
+                    <div class="top-img">
+                        <div class="activeimg">
+                            <img src="image/1.jpg">
+                            <img src="image/2.jpg">
+                            <img src="image/3.jpg">
+                            <img src="image/4.jpg">
+                            <img src="image/5.jpg">
+                        </div>
+                        <div class="left">
+                            <img src="image/left.png"> </div>
+                        <div class="right">
+                            <img src="image/right.png">
+                        </div>
+                    </div>
+                    <!-- 存放缩略图的容器-->
+                    <div class="bot-img">
+                        <ul>
+                            <li class="active">
+                                <img src="image/1.jpg"> </li>
+                            <li>
+                                <img src="image/2.jpg"> </li>
+                            <li>
+                                <img src="image/3.jpg"> </li>
+                            <li>
+                                <img src="image/4.jpg"> </li>
+                            <li>
+                                <img src="image/5.jpg"> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--右侧文字注释P标签  -->
+            <div class="d3c3">
+                <p>注释</p>
+            </div>
         </div>
     </section>
     <footer></footer>

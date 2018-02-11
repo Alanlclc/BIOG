@@ -19,6 +19,7 @@ header {
     position:fixed;
     top: 0px;
     left: 0px;
+    z-index: 1;
 }
 header p:nth-of-type(1){
     display:block;
@@ -158,9 +159,76 @@ section {
 
 /* 右边正文部分 */
 #d3{
-    background-color: pink;
+    /* background-color: pink; */
     height: 1000px;
     width: 75%;
     float: left;
     font-family: "Microsoft YaHei",微软雅黑,"Hiragino Sans GB",Tahoma,Arial,"\5b8b\4f53",SimSun,sans-serif;
+    padding-top: 40px;
 }
+
+.d3c2{
+    height: 400px;
+    width: 70%;
+    float: left;
+    /* background-color: chartreuse; */
+}
+
+.d3c3{
+    height: 400px;
+    width: 30%;
+    /* background-color: blue; */
+    float: left;
+}
+
+/* 轮播图设置 */
+.box{
+    width: 100%;height: 800px;border: 1px solid #dedede;margin: 40px auto;background: #f9f9f9;
+}
+.all{
+    width: 100%;height: 400px; overflow: hidden;
+}
+.top-img{
+    width: 100%;height: auto;font-size: 0;position: relative;
+}
+.activeimg{
+    width: 500%;
+    overflow: hidden;height: 300px;position: relative;
+}
+.activeimg img{
+    width: 800px;height: 300px;
+}
+.top-img .left{
+    width: 80px;height: 300px;background: rgba(0,0,0,0.4);position: absolute;left: 0;top: 0;text-align: center;line-height: 300px;
+    cursor: pointer;
+}
+.top-img .right{
+    width: 80px;height: 300px;background: rgba(0,0,0,0.4);position: absolute;left:620px;top: 0;text-align: center;line-height: 300px;
+    cursor: pointer;
+}
+.top-img .left:hover,.top-img .right:hover{
+    background: rgba(110, 104, 104, 0.746);
+}
+
+.bot-img{
+    height: 90px;width: 100%;
+}
+.bot-img ul{
+    width: 100%;height: 100px;
+}
+.bot-img ul li{
+    height: 100px;
+    margin-right: 8px;
+    width: 19%;float: left;border: 1% solid #fff;cursor: pointer;font-size: 0;
+}
+.bot-img ul li:nth-of-type(5){
+    margin-right: 0px;
+}
+.bot-img ul li.active{
+    border: 1px solid #ff6600;
+}
+.bot-img ul li img{
+    width: 100%;
+    height: 100%;
+}
+
